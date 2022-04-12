@@ -7,7 +7,7 @@ import {
   MobileImgText,
   ApplyButton,
   MobileText,
-} from "../style/Mobiledisplaycss";
+} from "../style/Homestyle/Mobiledisplaycss";
 import img1 from "../assets/DisplayAsset/MobileView.png";
 import CoinImg from "../assets/DisplayAsset/coin.png";
 

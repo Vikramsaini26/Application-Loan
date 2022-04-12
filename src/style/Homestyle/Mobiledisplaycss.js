@@ -1,15 +1,12 @@
 import styled from "styled-components";
-import MobileDisplay from "../assets/DisplayAsset/Mobilebackground.png";
 
 export const MobileWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  padding-top: 230px;
+  margin: 0px 250px;
 `;
 
-export const MobileImage = styled.img`
-  background-image: url(${MobileDisplay});
-`;
+export const MobileImage = styled.img``;
 
 export const MobileContentWrapper = styled.div`
   display: flex;
@@ -36,7 +33,8 @@ export const ApplyButton = styled.button`
   background: #363b97;
   border-radius: 8px;
   height: 60px;
-  width: 188px;
+  width: 100%;
+  max-width: 188px;
   margin-top: 27px;
   font-family: "Poppins";
   font-style: normal;

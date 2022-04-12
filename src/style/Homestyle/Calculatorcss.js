@@ -4,17 +4,40 @@ export const Wrapper = styled.div`
   border-radius: 8px;
   display: flex;
   justify-content: center;
+  @media only screen and (max-width: 800px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const CalculatorWrapper = styled.div`
+  position: relative;
+  bottom: 215px;
   background: linear-gradient(180deg, #363b97 0%, #454bb6 79.34%, #363b97 100%);
   border: 2px solid #ffffff;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 20px rgb(0 0 0 / 10%);
   border-radius: 8px;
   width: 100%;
   max-width: 1200px;
   height: 947px;
-  margin-top: 210px;
+
+  /* margin-top: 210px; */
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(
+      180deg,
+      #363b97 0%,
+      #454bb6 79.34%,
+      #363b97 100%
+    );
+    border: 2px solid #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1200px;
+    height: 947px;
+  }
 `;
 
 export const CalculatorHead = styled.div`
@@ -94,7 +117,8 @@ export const InputMonth = styled.div`
 `;
 
 export const BorderInput = styled.div`
-  width: 967.5px;
+  width: 100%;
+  max-width: 967.5px;
   border: 1.3px solid #ffffff;
 `;
 
@@ -137,7 +161,8 @@ export const AmountContentNumber = styled.div`
 `;
 
 export const ApplyButton = styled.button`
-  width: 291px;
+  width: 100%;
+  max-width: 291px;
   height: 64px;
   background: #ffffff;
   border: 1px solid #eae9f2;

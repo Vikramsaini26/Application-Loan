@@ -1,31 +1,27 @@
 import React from "react";
 import {
-  ContentWrapper,
-  ContentHead,
+  Wrapper,
   ContentText,
-  ContentImg,
-  ContentButton,
-  ButtonContainer,
-} from "../style/contentcss";
-import img3 from "../assets/ContentAsset/content1.png";
+  BorrowButton,
+  ContentMAin,
+} from "../style/Homestyle/contentcss";
+import stockimg from "../assets/ContentAsset/content1.png";
 
 const Content = () => {
   return (
-    <ContentWrapper>
-      <ContentHead>
+    <Wrapper>
+      <ContentMAin>
         <div>
-          <ContentText>Loan upto 1,00,000 at your fingertips </ContentText>
+          <ContentText>Loan upto 1,00,000 at your fingertips</ContentText>
         </div>
-        <ButtonContainer>
-          <ContentButton>Borrow now</ContentButton>
-        </ButtonContainer>
-      </ContentHead>
+        <div>
+          <BorrowButton>Borrow now</BorrowButton>
+        </div>
+      </ContentMAin>
       <div>
-        <div>
-          <ContentImg src={img3} />
-        </div>
+        <img src={stockimg} />
       </div>
-    </ContentWrapper>
+    </Wrapper>
   );
 };
 

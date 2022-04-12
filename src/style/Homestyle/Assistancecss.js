@@ -1,19 +1,30 @@
 import styled from "styled-components";
+
 export const Wrapper = styled.div`
-  background: #f2f3f8;
+  /* background: #f2f3f8; */
 `;
 
 export const AssistanceWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 170px 0px 120px;
-  margin-top: 150px;
+  padding: 100px 170px 300px 100px;
+  max-width: 1400px;
+  margin-top: 90px;
+  background: #f2f3f8;
+
+  @media only screen and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 export const AssistanceImg = styled.img`
-  width: 500px;
+  max-width: 500px;
   height: 300px;
+  @media only screen and (max-width: 1200px) {
+    padding: 0px 0px 0px 100px;
+  }
 `;
 export const AssistanceContent = styled.div``;
 
@@ -36,6 +47,9 @@ export const NameText = styled.input`
   width: 530px;
   border: none;
   padding-left: 10px;
+  @media only screen and (max-width: 1200px) {
+    margin: 0px 0px 0px 100px;
+  }
 `;
 export const FormWrapper = styled.div`
   display: flex;
@@ -52,6 +66,9 @@ export const PhoneText = styled.input`
   width: 412px;
   border: none;
   padding-left: 10px;
+  @media only screen and (max-width: 1200px) {
+    margin: 0px 0px 0px 100px;
+  }
 `;
 
 export const FormButton = styled.button`

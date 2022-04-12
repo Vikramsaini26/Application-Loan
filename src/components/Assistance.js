@@ -11,7 +11,7 @@ import {
   ImgWraper,
   InputButton,
   Wrapper,
-} from "../style/Assistancecss";
+} from "../style/Homestyle/Assistancecss";
 import img1 from "../assets/AssisitanceAsset/Group.png";
 import Calculator from "./Calculator";
 const Assistance = () => {
@@ -36,7 +36,6 @@ const Assistance = () => {
           </FormWrapper>
         </AssistanceContent>
       </AssistanceWrapper>
-      <Calculator />
     </Wrapper>
   );
 };

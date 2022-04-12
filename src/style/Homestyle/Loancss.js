@@ -10,7 +10,6 @@ export const LoanWrapper = styled.div`
   border-radius: 8px;
   width: 100%;
   max-width: 1282px;
-  height: 813px;
   margin-top: 210px;
   border: 1px solid #363b97;
 `;
@@ -31,7 +30,7 @@ export const LoanHeadText = styled.div`
   color: #464040;
 `;
 
-export const NeedsContainer = styled.div`
+export const NeedsWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
   padding: 50px 100px;
@@ -50,9 +49,22 @@ export const NeedText = styled.div`
 `;
 
 export const NeedItems = styled.div`
-  width: 100px;
+  width: 100%;
+  max-width: 100px;
   height: 100px;
   background: #ffffff;
   border-radius: 25px;
   margin: 0 auto;
+`;
+
+export const ImgContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+`;
+
+export const NeedsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 `;

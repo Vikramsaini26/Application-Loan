@@ -17,7 +17,7 @@ import {
   AmountContentNumber,
   ApplyButtonWrapper,
   ApplyButton,
-} from "../style/Calculatorcss";
+} from "../style/Homestyle/Calculatorcss";
 
 const Calculator = () => {
   return (
