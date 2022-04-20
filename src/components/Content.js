@@ -16,6 +16,7 @@ import {
   Containerpayment,
   ContainerCharges,
   Containerrequire,
+  BottomContainer,
 } from "../style/Homestyle/Contentcss";
 import displayimg from "../assets/ContentAsset/content1.png";
 import doodle from "../assets/ContentAsset/Doodle.png";
@@ -47,6 +48,17 @@ const Content = () => {
             <Imgthree src={rectangle} />
           </Imgwrapper>
         </Imgcontainer>
+
+        <BottomContainer>
+          <Buttoncontainer>
+            <Borrowbutton>Borrow Now</Borrowbutton>
+          </Buttoncontainer>
+          <Containerthree>
+            <ContainerCharges>No Hidden Charges</ContainerCharges>
+            <Containerpayment>Flexible Re-Payment</Containerpayment>
+            <Containerrequire>No Guarantor Required</Containerrequire>
+          </Containerthree>
+        </BottomContainer>
       </Container>
     </Wrapper>
   );

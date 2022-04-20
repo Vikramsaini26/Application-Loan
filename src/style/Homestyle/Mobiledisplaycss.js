@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   padding: 212px 300px;
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 1200px) {
     padding: 50px 10px;
   }
 `;

@@ -215,6 +215,7 @@ export const ApplyButton = styled.button`
   @media only screen and (max-width: 700px) {
     font-size: 10px;
     height: 30px;
+    border-radius: 5px;
   }
 `;
 

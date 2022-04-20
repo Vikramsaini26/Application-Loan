@@ -16,7 +16,7 @@ export const LoanWrapper = styled.div`
   border-radius: 8px;
   border: 1px solid #363b97;
   padding-bottom: 182px;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 700px) {
     margin: 10px;
     padding-bottom: 50px;
   }
@@ -26,7 +26,7 @@ export const LoanHead = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 100px;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 700px) {
     margin-top: 50px;
   }
 `;
@@ -39,7 +39,7 @@ export const LoanHeadText = styled.div`
   line-height: 140%;
   text-transform: capitalize;
   color: #363e98;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 700px) {
     font-size: 20px;
   }
 `;
@@ -50,7 +50,7 @@ export const NeedsWrapper = styled.div`
   padding: 50px 100px;
   gap: 40px;
   margin-top: 95px;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 700px) {
     padding: 0px 0px;
     margin-top: 50px;
     gap: 10px;
@@ -66,7 +66,7 @@ export const NeedText = styled.div`
   font-size: 24px;
   line-height: 36px;
   color: #464040;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 700px) {
     font-size: 8px;
     line-height: 10px;
   }
@@ -79,7 +79,7 @@ export const NeedItems = styled.div`
   background: #ffffff;
   border-radius: 25px;
   margin: 0 auto;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 700px) {
     width: 100%;
     max-width: 70px;
     height: 70px;
@@ -90,7 +90,7 @@ export const ImgContainer = styled.div`
   display: flex;
   justify-content: center;
   padding-top: 30px;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 700px) {
     padding-top: 25px;
   }
 `;
@@ -102,7 +102,7 @@ export const NeedsContainer = styled.div`
 `;
 
 export const NeedImgContainer = styled.img`
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 700px) {
     height: 25px;
     width: 25px;
   }

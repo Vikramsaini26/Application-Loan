@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   padding: 83px 126px;
   background: #f2f3f8;
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 700px) {
     padding: 10px 30px;
   }
 `;
@@ -15,7 +15,7 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 700px) {
     display: flex;
     flex-direction: column;
   }
@@ -55,7 +55,7 @@ export const Nameinput = styled.input`
   border: none;
   padding-left: 10px;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 700px) {
     height: 40px;
   }
 `;
@@ -70,7 +70,7 @@ export const Numberinput = styled.input`
   border: none;
   padding-left: 10px;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 700px) {
     margin-left: 13px;
     height: 40px;
   }
@@ -90,7 +90,7 @@ export const Submit = styled.button`
   height: 58px;
   width: 117px;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 700px) {
     font-size: 10px;
     border-radius: 5px 5px;
     height: 38px;
@@ -107,7 +107,7 @@ export const Image = styled.img`
 export const Imgcontainer = styled.div``;
 
 export const Buttoncontainer = styled.div`
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 700px) {
     display: flex;
     flex-direction: column;
     gap: 20px;

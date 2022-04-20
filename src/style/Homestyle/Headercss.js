@@ -43,7 +43,7 @@ export const Heading = styled.div`
 
 export const ApplicationButton = styled.button`
   background: #363b97;
-  border-radius: 8px;
+  border-radius: 4px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -123,6 +123,9 @@ export const ModalText = styled.div`
   line-height: 22px;
   text-align: center;
   color: #464040;
+  @media screen and (max-width: 1200px) {
+    font-size: 13px;
+  }
 `;
 
 export const ButtonContainer1 = styled.div`
@@ -185,6 +188,3 @@ export const ButtonContainerModal = styled.div`
     gap: 10px;
   }
 `;
-
-
-

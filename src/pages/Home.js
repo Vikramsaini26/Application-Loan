@@ -8,12 +8,15 @@ import Loan from "../components/Loan";
 import About from "../components/About";
 import Partners from "../components/Partners";
 import Footer from "../components/Footer";
+import Marquees from "../components/Marquees";
 
 const Home = () => {
   return (
     <div>
       <Header />
       <Content />
+      <Marquees />
+
       <Assisitance />
       <Calculator />
       <Mobiledisplay />

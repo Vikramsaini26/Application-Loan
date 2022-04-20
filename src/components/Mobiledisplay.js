@@ -12,15 +12,31 @@ import {
 } from "../style/Homestyle/Mobiledisplaycss";
 import Display from "../assets/DisplayAsset/MobileView.png";
 import coin from "../assets/DisplayAsset/coin.png";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 const Mobiledisplay = () => {
   return (
     <Wrapper>
       <Container>
         <Imgwrapper>
-          <div>
+          <Carousel infiniteLoop autoPlay>
+            <div>
+              <img src={Display} />
+            </div>
+            <div>
+              <img src={Display} />
+            </div>
+            <div>
+              <img src={Display} />
+            </div>
+            <div>
+              <img src={Display} />
+            </div>
+          </Carousel>
+          {/* <div>
             <img src={Display} />
-          </div>
+          </div> */}
         </Imgwrapper>
         <Contentcontainer>
           <MaintextWrapper>

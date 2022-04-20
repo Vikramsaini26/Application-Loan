@@ -1,9 +1,11 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  padding: 135px 75px;
+  padding-top: 135px;
+  /* padding: 135px 0px; */
   @media screen and (max-width: 1200px) {
-    padding: 0px 0px;
+    /* padding: 0px 0px; */
+    padding-top: 0px;
     margin-bottom: 30px;
   }
 `;
@@ -45,18 +47,21 @@ export const Contenttext = styled.div`
 export const Borrowbutton = styled.button`
   background: #363b97;
   border-radius: 8px;
+  width: 120px;
   height: 48px;
   border: none;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 20px;
   text-align: center;
   color: #ffffff;
   @media screen and (max-width: 1200px) {
     font-size: 10px;
     height: 30px;
+    border-radius: 4px;
+    width: 80px;
   }
 `;
 
@@ -65,9 +70,7 @@ export const Contentcontainer = styled.div`
   flex-direction: column;
   gap: 70px;
   @media screen and (max-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: none;
   }
 `;
 
@@ -139,6 +142,7 @@ export const Containerthree = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
+  text-align: center;
 
   @media screen and (max-width: 1200px) {
     display: flex;
@@ -152,8 +156,8 @@ export const Containerpayment = styled.div`
   border-left: 1px solid #e2e2e2;
   border-right: 1px solid #e2e2e2;
   height: 40px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
@@ -165,7 +169,7 @@ export const Containerpayment = styled.div`
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 1200px) {
-    font-size: 15px;
+    font-size: 11px;
     line-height: 18px;
   }
 `;
@@ -179,7 +183,7 @@ export const ContainerCharges = styled.div`
   text-transform: capitalize;
   color: #464040;
   @media screen and (max-width: 1200px) {
-    font-size: 15px;
+    font-size: 11px;
     line-height: 18px;
   }
 `;
@@ -194,7 +198,13 @@ export const Containerrequire = styled.div`
   color: #464040;
 
   @media screen and (max-width: 1200px) {
-    font-size: 15px;
+    font-size: 11px;
     line-height: 18px;
+  }
+`;
+
+export const BottomContainer = styled.div`
+  @media screen and (min-width: 1190px) {
+    display: none;
   }
 `;

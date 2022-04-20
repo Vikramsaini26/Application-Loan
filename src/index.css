@@ -49,3 +49,142 @@ code {
 .ReactModal__Overlay--before-close {
   opacity: 0;
 }
+
+.carousel .thumbs {
+  display: none;
+}
+
+.slider .animated {
+  display: none;
+}
+
+.carousel.carousel-slider {
+  width: 100%;
+  max-width: 200px;
+  height: 480px;
+}
+
+.carousel .carousel-status {
+  display: none;
+}
+
+.carousel .control-dots {
+  position: absolute;
+  top: 450px;
+  width: 100%;
+}
+
+.carousel .control-disabled.control-arrow {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: inherit;
+  display: none;
+}
+.carousel .control-prev.control-arrow {
+  left: 0;
+}
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid #fff;
+  display: none;
+}
+.carousel .control-next.control-arrow {
+  right: 0;
+  display: none;
+}
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid #fff;
+  display: none;
+}
+.carousel-root {
+  outline: none;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+}
+.carousel * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.carousel img {
+  width: 100%;
+  display: inline-block;
+  pointer-events: none;
+}
+.carousel .carousel {
+  position: relative;
+}
+.carousel .control-arrow {
+  outline: 0;
+  border: 0;
+  background: none;
+  top: 50%;
+  margin-top: -13px;
+  font-size: 18px;
+}
+.carousel .thumbs-wrapper {
+  margin: 20px;
+  overflow: hidden;
+}
+
+.carousel.carousel-slider {
+  position: absolute;
+  margin: 0;
+  overflow: hidden;
+}
+.carousel.carousel-slider .control-arrow {
+  top: 0;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  margin-top: 0;
+  padding: 5px;
+}
+.carousel.carousel-slider .control-arrow:hover {
+  background: rgba(178, 36, 36, 0.2);
+}
+
+.carousel .slider {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  list-style: none;
+  width: 100%;
+}
+
+.carousel .slide {
+  min-width: 100%;
+  margin: 0;
+  position: relative;
+  text-align: center;
+}
+.carousel .slide img {
+  width: 100%;
+  vertical-align: top;
+  border: 0;
+}
+.carousel .slide iframe {
+  display: inline-block;
+  width: calc(100% - 80px);
+  margin: 0 40px 40px;
+  border: 0;
+}
+
+.carousel .control-dots {
+  position: absolute;
+  bottom: 0;
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 1;
+}
+.carousel .control-dots .dot {
+  border: 7px solid #363b97;
+  border-radius: 50%;
+}
+
+.marquee-container {
+  margin-top: 40px;
+}
