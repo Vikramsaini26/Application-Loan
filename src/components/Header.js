@@ -1,50 +1,86 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import cookies from "../assets/ModalAsset/cookiesimg.png";
 import {
-  HeaderContainer,
-  HeadLeft,
-  Head,
-  HeadContent,
-  Button,
-  WalletButton,
-  ButtonContent,
-  WalletImage,
-  SelectContainer,
-  SelectMain,
-  SelectImg,
-} from "../style/Headercss";
-import img1 from "../assets/HeaderAsset/globe.png";
-import img2 from "../assets/HeaderAsset/Group.png";
-const Header = () => {
-  return (
-    <HeaderContainer>
-      <HeadLeft>
-        <HeadContent>GOOD LOANS</HeadContent>
-      </HeadLeft>
+  Wrapper,
+  Container,
+  Heading,
+  ApplicationButton,
+  AffindiButton,
+  SelectButton,
+  SelectButtonContainer,
+  ModalContainer,
+  ModalText,
+  AcceptButton,
+  DeclineButton,
+  ButtonContainer,
+  ButtonContainerModal,
+} from "../style/Homestyle/Headercss";
+import affindi from "../assets/HeaderAsset/Group.png";
+import globe from "../assets/HeaderAsset/globe.png";
+import Modal from "react-modal";
+Modal.setAppElement("#root");
 
-      <Head>
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  function toggleModal() {
+    setIsOpen(!isOpen);
+  }
+  return (
+    <Wrapper>
+      <Container>
         <div>
-          <Button>Continue Your Application</Button>
+          <Heading>GOOD LOANS</Heading>
         </div>
-        <div>
-          <WalletButton>
-            <ButtonContent>
+        <ButtonContainer>
+          <ApplicationButton onClick={toggleModal}>
+            Continue Your Application
+          </ApplicationButton>
+          <Modal
+            isOpen={isOpen}
+            onRequestClose={toggleModal}
+            contentLabel="My dialog"
+            className="modal"
+          >
+            <ModalContainer>
               <div>
-                <WalletImage src={img2} />
+                <img src={cookies} />
               </div>
-              <div> Affinidi Wallet</div>
-            </ButtonContent>
-          </WalletButton>
-        </div>
-        <div>
-          <SelectContainer>
-            <SelectImg src={img1} />
-            <SelectMain>
+              <ModalText>
+                By clicking “Accept”, you agree Good Loans can store cookies on
+                your device and disclose information in accordance with our
+                <div>
+                  <Link to="/cookies">cookie policy</Link>
+                </div>
+              </ModalText>
+
+              <ButtonContainerModal>
+                <div>
+                  <AcceptButton onClick={toggleModal}>Accept</AcceptButton>
+                </div>
+                <div>
+                  <DeclineButton onClick={toggleModal}>Decline</DeclineButton>
+                </div>
+              </ButtonContainerModal>
+            </ModalContainer>
+          </Modal>
+          <AffindiButton>
+            <img src={affindi} />
+            <div>Affinidi Wallet</div>
+          </AffindiButton>
+
+          <SelectButtonContainer>
+            <div>
+              <img src={globe} />
+            </div>
+            <SelectButton>
               <option>English</option>
-            </SelectMain>
-          </SelectContainer>
-        </div>
-      </Head>
-    </HeaderContainer>
+            </SelectButton>
+          </SelectButtonContainer>
+        </ButtonContainer>
+      </Container>
+    </Wrapper>
   );
 };
 

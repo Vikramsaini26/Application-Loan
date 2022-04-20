@@ -1,20 +1,41 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  border-radius: 8px;
+  padding-top: 209px;
+  background: linear-gradient(
+    rgb(242, 243, 248) 0%,
+    rgb(242, 243, 248) 36%,
+    rgb(242, 243, 248) 36%,
+    white 36%,
+    white 100%
+  );
+
+  @media only screen and (max-width: 700px) {
+    padding-top: 70px;
+  }
+`;
+
+export const Container = styled.div`
   display: flex;
   justify-content: center;
+  gap: 100px;
+  @media only screen and (max-width: 700px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 `;
 
 export const CalculatorWrapper = styled.div`
   background: linear-gradient(180deg, #363b97 0%, #454bb6 79.34%, #363b97 100%);
   border: 2px solid #ffffff;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-  height: 947px;
-  margin-top: 210px;
+  box-shadow: 0px 4px 20px rgb(0 0 0 / 10%);
+  border-radius: 8px;
+  @media only screen and (max-width: 700px) {
+    padding: 10px 10px;
+  }
 `;
 
 export const CalculatorHead = styled.div`
@@ -25,18 +46,33 @@ export const CalculatorHead = styled.div`
   line-height: 140%;
   text-transform: capitalize;
   color: #ffffff;
-  padding-top: 70px;
+  margin: 70px 430px;
+  @media only screen and (max-width: 700px) {
+    display: none;
+  }
 `;
 
 export const CalculatorInput = styled.div`
   display: flex;
   justify-content: space-around;
-  padding-top: 65px;
+  gap: 70px;
+  margin: 70px 117px;
+  @media only screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin: 10px 10px;
+  }
 `;
 
 export const HeadContent = styled.div`
   display: flex;
   justify-content: center;
+  @media only screen and (max-width: 700px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const InputContent = styled.div`
@@ -47,6 +83,9 @@ export const InputContent = styled.div`
   line-height: 36px;
   letter-spacing: 0.01em;
   color: #ffffff;
+  @media only screen and (max-width: 700px) {
+    font-size: 15px;
+  }
 `;
 
 export const SliderInput = styled.input`
@@ -57,13 +96,18 @@ export const SliderInput = styled.input`
   border-radius: 30px;
   width: 400px;
   height: 10px;
+
+  @media only screen and (max-width: 700px) {
+    width: 150px;
+    height: 5px;
+  }
 `;
 export const InputButton = styled.div`
   background: linear-gradient(180deg, #363b97 0%, #454bb6 79.34%, #363b97 100%);
   border: 1px solid #ffffff;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  width: 200px;
+  width: 300px;
   height: 50px;
   display: flex;
   justify-content: center;
@@ -76,6 +120,10 @@ export const InputButton = styled.div`
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #ffffff;
+  @media only screen and (max-width: 1200px) {
+    width: 100%;
+    font-size: 10px;
+  }
 `;
 export const InputMonth = styled.div`
   width: 401px;
@@ -91,23 +139,30 @@ export const InputMonth = styled.div`
   font-size: 16px;
   line-height: 24px;
   color: #4046ac;
+  @media only screen and (max-width: 700px) {
+    display: none;
+  }
 `;
 
 export const BorderInput = styled.div`
-  width: 967.5px;
+  width: 100%;
+  max-width: 967.5px;
   border: 1.3px solid #ffffff;
 `;
 
 export const BorderWrapper = styled.div`
   display: flex;
   justify-content: center;
-  padding-top: 115px;
 `;
 
 export const AmountWrapper = styled.div`
   padding-top: 80px;
   display: flex;
   justify-content: space-evenly;
+  @media only screen and (max-width: 700px) {
+    gap: 150px;
+    padding-top: 0px;
+  }
 `;
 export const AmountContent = styled.div`
   display: flex;
@@ -123,6 +178,9 @@ export const AmountContentText = styled.div`
   line-height: 27px;
   letter-spacing: 0.01em;
   color: #83d1d8;
+  @media only screen and (max-width: 700px) {
+    font-size: 12px;
+  }
 `;
 
 export const AmountContentNumber = styled.div`
@@ -134,11 +192,15 @@ export const AmountContentNumber = styled.div`
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #ffffff;
+  @media only screen and (max-width: 700px) {
+    font-size: 15px;
+  }
 `;
 
 export const ApplyButton = styled.button`
-  width: 291px;
-  height: 64px;
+  width: 100%;
+  max-width: 291px;
+  height: 50px;
   background: #ffffff;
   border: 1px solid #eae9f2;
   border-radius: 10px;
@@ -150,10 +212,72 @@ export const ApplyButton = styled.button`
   text-align: center;
   color: #363b97;
   cursor: pointer;
+  @media only screen and (max-width: 700px) {
+    font-size: 10px;
+    height: 30px;
+  }
 `;
 
 export const ApplyButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
-  padding-top: 100px;
+  margin: 82px 0px;
+  @media only screen and (max-width: 700px) {
+    margin: 10px 0px;
+  }
+`;
+
+export const InputWrapper = styled.div`
+  display: flex;
+  gap: 72px;
+  @media only screen and (max-width: 700px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+`;
+
+export const InputContWrapper = styled.div`
+  @media only screen and (max-width: 700px) {
+    display: flex;
+    justify-content: center;
+  }
+`;
+
+export const AmountContWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+  @media only screen and (max-width: 700px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+  }
+`;
+
+export const Select = styled.select`
+  width: 150px;
+  height: 28px;
+  background: #fafafa;
+  border-radius: 4px;
+  padding-left: 20px;
+  @media only screen and (min-width: 700px) {
+    display: none;
+  }
+`;
+
+export const Month = styled.div`
+  background: #83d1d8;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  width: 96px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (min-width: 700px) {
+  }
 `;

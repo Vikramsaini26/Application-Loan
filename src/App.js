@@ -1,17 +1,18 @@
-import Header from "./components/Header";
-import Content from "./components/Content";
-import Assistance from "./components/Assistance";
-import Mobiledisplay from "./components/Mobiledisplay";
-import Loan from "./components/Loan";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Cookies from "./pages/Cookie";
+import Privacy from "./pages/Privacy";
 
 function App() {
   return (
     <>
-      <Header />
-      <Content />
-      <Assistance />
-      <Mobiledisplay />
-      <Loan />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/cookies" element={<Cookies />} />
+          <Route path="/privacy" element={<Privacy />} />
+        </Routes>
+      </Router>
     </>
   );
 }
